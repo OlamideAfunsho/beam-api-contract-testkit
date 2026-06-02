@@ -1,0 +1,26 @@
+{
+  "sourceUrl": "https://docs.onbeam.com/example-player-contract.json",
+  "fetchedAt": "2026-05-30T00:00:00.000Z",
+  "body": {
+    "service": "beam-player-api",
+    "version": "2026-05-01",
+    "routes": [
+      {
+        "path": "/player/operations/{id}",
+        "method": "GET",
+        "responseFields": [
+          "id",
+          "status"
+        ]
+      },
+      {
+        "path": "/automation/profiles",
+        "method": "POST",
+        "responseFields": [
+          "id",
+          "status"
+        ]
+      }
+    ]
+  }
+}

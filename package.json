@@ -1,0 +1,24 @@
+{
+  "name": "beam-api-contract-testkit",
+  "version": "1.0.0",
+  "description": "Local contract-test harness and schema-drift guardrail for Beam Player and Automation integrations",
+  "main": "dist/src/cli/main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node dist/tests/run-tests.js",
+    "pin": "node dist/src/cli/main.js pin",
+    "diff": "node dist/src/cli/main.js diff",
+    "harness": "node dist/src/cli/main.js harness"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "typescript": "^6.0.3"
+  }
+}
